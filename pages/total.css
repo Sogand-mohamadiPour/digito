@@ -1,0 +1,13 @@
+@font-face {
+    font-family: sahel;
+    src: url(../assets/fonts/Sahel-Bold.ttf);
+}
+
+body{
+    font-family: sahel;
+    direction: rtl;
+}
+
+.img{
+    height: 75px;
+}

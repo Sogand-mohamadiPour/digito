@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/header-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>DigiTO</title>
+</head>
+
+<body>
+    <!----------------------- Header -------------------------->
+    <header class="bg-light py-2 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <button class="btn btn-outline-secondary me-3  " data-bs-toggle="offcanvas"
+                    data-bs-target="#menu" id="categories-btn">
+                    <h4 class="mb-0"><i class="bi bi-list"></i></h4>
+                </button>
+                <h1 class="fs-3 text-primary">digiTO</h1>
+            </div>
+            <div class="search-bar flex-grow-1 mx-4">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="نام محصول، برند یا کد کالا..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="button">
+                        <i style="font-size: 24px" class="fa icon">&#xf002;</i>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <a href="pages/total.html" class="text-secondary me-3 fs-4">
+                    <i class="bi bi-cart fs-4"></i>
+                </a>
+                <a href="pages/login.html" class="text-secondary">
+                    <i class="bi bi-person fs-4"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offcanvas منو همبرگر -->
+    <div class="offcanvas offcanvas-start" id="menu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="categoriesMenuLabel">دسته بندی ها</h5>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-unstyled">
+                <li><a class="text-black" href="pages/mobile.html"><i class="text-black bi bi-phone"></i>گوشی موبایل</a></li>
+                <li><a class="text-black" href="pages/laptop.html"><i class="bi bi-laptop"></i>لپ تاپ</a></li>
+                <li><a class="text-black" href="pages/laptop.html"><i class="bi bi-book"></i>مک بوک</a></li>
+                <li><a class="text-black" href="pages/tablet.html"><i class="bi bi-tablet"></i>تبلت</a></li>
+                <li><a class="text-black" href="pages/everything.html"><i class="bi bi-house"></i>لوازم جانبی</a></li>
+            </ul>
+        </div>
+        <div class="offcanvas-body">
+            <h3 class="text-black"> <i class="bi bi-headset"></i>چت پشتیبانی</h3>
+            <div class="position-relative">
+                <input class="form-control" type="text" name="" id="" placeholder="ارتباط با پشتیبان...">
+                 <button class="btn btn-primary position-absolute end-0 iii"><i class="bi bi-send"></i>ارسال</button>
+            </div>
+
+            <div class="mt-5 d-flex justify-content-around">
+                <h3 class="ii d-block bi bi-telegram text-primary"></h3>
+                <h3 class="ii d-block bi bi-instagram text-danger"></h3>
+                <h3 class="ii d-block bi bi-whatsapp text-success"></h3>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ Banner  ----------------------------------->
+    <section class="pt-1 d-flex">
+        <div class="container d-flex flex-wrap">
+            <div class="col-12 col-md-7 d-flex justify-content-around align-items-center mb-3 mb-md-0">
+                <div class="d-flex flex-wrap justify-content-around text-center">
+                    <div class="text-center mx-2 icon-wrapper">
+                        <a href="pages/off.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-hourglass-split text-blue fs-3"></i>
+                            <p class="m-0">پیشنهادهای تخفیفی</p>
+                        </a>
+                    </div>
+                    <div class="text-center mx-2 icon-wrapper">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="bi bi-bag-check text-purple fs-3"></i>
+                            <p class="m-0">خرید اقساطی</p>
+                        </a>
+                    </div>
+                    <div class="text-center mx-2 icon-wrapper">
+                        <a href="pages/omde.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-cart-plus text-green fs-3"></i>
+                            <p class="m-0">خرید عمده</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 text-center d-flex flex-column justify-content-center align-items-center tt">
+                <div id="site-name">
+                    <h1 class="animate fw-bold mb-0">digiTo</h1>
+                    <p class="text-primary">فناوری در دستان شما</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!---------------------------- Filters کناری ------------------------------>
+    <div class="container my-1">
+        <div class="row ">
+            <!-- کناری -->
+            <!-- <aside class="col-12 col-md-3 py-2">
+                <div class="accordion" id="filtersAccordion"> -->
+                    <!-- Brand Filter -->
+                    <!-- <div class="accordion-item">
+                        <h2 class="accordion-header" id="brandFilterHeading">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#brandFilter" aria-expanded="true" aria-controls="brandFilter">
+                                شرکت سازنده
+                            </button>
+                        </h2>
+                        <div id="brandFilter" class="accordion-collapse collapse show"
+                            aria-labelledby="brandFilterHeading" data-bs-parent="#filtersAccordion">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand1">
+                                    <label class="form-check-label" for="brand1">MSI ام اس آی</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand2">
+                                    <label class="form-check-label" for="brand2">Apple اپل</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="brand3">
+                                    <label class="form-check-label" for="brand3">HP اچ پی</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Filter قیمت-->
+                    <!-- <div class="accordion-item">
+                        <h2 class="accordion-header" id="priceFilterHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#priceFilter" aria-expanded="false" aria-controls="priceFilter">
+                                قیمت
+                            </button>
+                        </h2>
+                        <div id="priceFilter" class="accordion-collapse collapse" aria-labelledby="priceFilterHeading"
+                            data-bs-parent="#filtersAccordion">
+                            <div class="accordion-body">
+                                <input type="range" class="form-range" id="priceRange">
+                                <p class="text-muted">محدوده قیمت: ۰ تومان - ۵۰,۰۰۰,۰۰۰ تومان</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside> -->
+
+            <!-------------------------------------------- Slider ------------------------------------------>
+            <section class="py-2 col-12 col-md-12">
+                <div class="carousel slide carousel-fade" id="slider" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="w-100" src="assets/img/slider/s-01.jpg" alt="slider">
+                        </div>
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img class="w-100" src="assets/img/slider/s-02.jpg" alt="slider">
+                        </div>
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img class="w-100" src="assets/img/slider/s-03.jpg" alt="slider">
+                        </div>
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img class="w-100" src="assets/img/slider/s-04.jpg" alt="slider">
+                        </div>
+                    </div>
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+                        <button data-bs-target="#slider" data-bs-slide-to="1"></button>
+                        <button data-bs-target="#slider" data-bs-slide-to="2"></button>
+                        <button data-bs-target="#slider" data-bs-slide-to="3"></button>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slider">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slider">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- ----------------------------------------category------------------------------------------ -->
+
+    <div class="container my-5">
+        <div class="d-flex flex-wrap justify-content-around gap-3 category-icons mb-4">
+            <a class="category-h" href="pages/mobile.html"><img src="assets/img/13mini.jpg" alt="موبایل"></a>
+            <a class="category-h" href="pages/everything.html"><img src="assets/img/handcontrol.jpg" alt="گیمینگ"></a>
+            <a class="category-h" href="pages/laptop.html"><img src="assets/img/laptop.jpg" alt="لپ‌تاپ"></a>
+            <a class="category-h" href="pages/laptop.html"><img src="assets/img/macbook.jpg" alt="مک بوک"></a>
+            <a class="category-h" href="pages/tablet.html"><img src="assets/img/tablet.jpg" alt="تبلت"></a>
+            <a class="category-h" href="pages/off.html"><img src="assets/img/charger.png" alt="شارژر"></a>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="row g-3 d-flex justify-content-center">
+            <!-- Samsung -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="product-card" style="background-color: #0A5EB0;">
+                    <h5>گوشی‌های سامسونگ</h5>
+                    <a href="pages/mobile.html" class="btn">مشاهده همه</a>
+                    <img src="assets/img/samsung.png" alt="سامسونگ" class="d-md-block">
+                </div>
+            </div>
+
+            <!-- Xiaomi -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="product-card" style="background-color: #A2D2DF;">
+                    <h5>گوشی‌های شیائومی</h5>
+                    <a href="pages/mobile.html" class="btn">مشاهده همه</a>
+                    <img src="assets/img/xiaomi.png" alt="شیائومی">
+                </div>
+            </div>
+
+            <!-- iPhone -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="product-card" style="background-color: #0D92F4;">
+                    <h5>گوشی‌های آیفون</h5>
+                    <a href="pages/mobile.html" class="btn">مشاهده همه</a>
+                    <img src="assets/img/iphone.png" alt="آیفون">
+                </div>
+            </div>
+
+            <!-- Motorola -->
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="product-card" style="background-color: #78B3CE;">
+                    <h5>گوشی‌های موتورولا</h5>
+                    <a href="pages/mobile.html" class="btn">مشاهده همه</a>
+                    <img src="assets/img/motorolla.png" alt="موتورولا">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- laptop and charger -->
+        <div class="row mt-4">
+            <div class="col-md-6 mb-4" id="bigInfo">
+                <div class="info-card d-md-flex flex-column align-items-center text-md-start">
+                    <img src="assets/img/laptop.png" alt="لپ‌تاپ" class="img-fluid">
+                    <div id="info">
+                        <h3>لپ تاپ‌های اداری و اقتصادی</h3>
+                        <p> تنوعی بی‌نظیر با بهترین قیمت</p>
+                        <a href="pages/laptop.html" class="btn btn-primary">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4" id="bigInfo2">
+                <div class="info-card d-md-flex flex-column align-items-center text-md-start">
+                    <img src="assets/img/charger.png" alt="شارژر" class="img-fluid">
+                    <div id="info2">
+                        <h3>همیشه شارژ باش</h3>
+                        <p>تنوعی بی‌نظیر از انواع شارژرها و پاوربانک‌ها</p>
+                        <a href="pages/off.html" class="btn btn-primary">مشاهده</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------------------------- -->
+    <div class="container mt-4">
+
+        <section class="mb-5">
+            <h2 class="section-title "><i class="bi bi-laptop p-2"></i>مک‌بوک ها</h2>
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4 justify-content-center">
+                    <img src="assets/img/macbook2.jpg" class="img-fluid mb-2 img-t" alt="MacBook">
+                    <del class="d-block">73,480,000 تومان</del>
+                    <h5>70,000,000 تومان</h5>
+                    <a href="pages/buylaptop.html" class="btn btn-primary btn-t">می‌خرمش</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/macbook3.jpg" class="img-fluid mb-2 img-t" alt="MacBook">
+                    <del class="d-block">75,950,000 تومان</del>
+                    <h5>72,035,000 تومان</h5>
+                    <a href="pages/buylaptop.html" class="btn btn-primary btn-t">می‌خرمش</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/macbook4.jpg" class="img-fluid mb-2 img-t" alt="MacBook">
+                    <del class="d-block">80,730,000 تومان</del>
+                    <h5>77,777,777 تومان</h5>
+                    <a href="pages/buylaptop.html" class="btn btn-primary btn-t">می‌خرمش</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/macbook5.jpg" class="img-fluid mb-2 img-t" alt="MacBook">
+                    <del class="d-block">56,317,000 تومان</del>
+                    <h5>53,200,000 تومان</h5>
+                    <a href="pages/buylaptop.html" class="btn btn-primary btn-t">می‌خرمش</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title"><i class="bi bi-phone p-2"></i>گوشی های سامسونگ</h2>
+            <div class="row text-center">
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/samsung.png" class="img-fluid mb-2 img-t" alt="Samsung Phone">
+                    <del class="d-block">75,317,000 تومان</del>
+                    <h5>65,200,000 تومان</h5>
+                    <a href="pages/buying2.html" class="btn btn-primary btn-t">گوشی سامسونگ مدل s24</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/a04.jpg" class="img-fluid mb-2 img-t" alt="Samsung Phone">
+                    <del class="d-block">7,317,000 تومان</del>
+                    <h5>5,200,000 تومان</h5>
+                    <a href="pages/buying2.html" class="btn btn-primary btn-t">گوشی سامسونگ مدل a04</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/a23.jpg" class="img-fluid mb-2 img-t" alt="Samsung Phone">
+                    <del class="d-block">12,317,000 تومان</del>
+                    <h5>10,200,000 تومان</h5>
+                    <a href="pages/buying2.html" class="btn btn-primary btn-t">گوشی سامسونگ مدل a23</a>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                    <img src="assets/img/a55/a55-pink.jpg" class="img-fluid mb-2 img-t" alt="Samsung Phone">
+                    <del class="d-block">15,317,000 تومان</del>
+                    <h5>13,200,000 تومان</h5>
+                    <a href="pages/buying2.html" class="btn btn-primary btn-t">گوشی سامسونگ مدل a55</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- -----------------4 divs------------------>
+
+    <div class="container my-5 div4">
+        <h2 class="section-title"><i class="bi bi-tablet p-2"></i>تبلت ها</h2>
+        <div class="row g-3 justify-content-center">
+       
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="custom-card" style="background-color: #FFED97;">
+                    <img src="assets/img/s-t.png" alt="Product 1" class="card-image">
+                    <a href="pages/tablet.html" class="btn btn-warning card-text">تبلت های سامسونگ</a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="custom-card" style="background-color: #98fb98;">
+                    <img src="assets/img/a-t.png" alt="Product 2" class="card-image">
+                    <a href="pages/tablet.html" class="btn btn-success card-text">تبلت های اپل</a>
+                </div>
+            </div>
+           
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="custom-card" style="background-color: #9BD7FF;">
+                    <img src="assets/img/x-t.png" alt="Product 3" class="card-image">
+                    <a href="pages/tablet.html" class="btn btn-info card-text">تبلت های شیائومی</a>
+                </div>
+            </div>
+           
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                <div class="custom-card" style="background-color:#d3d3d3 ;">
+                    <img src="assets/img/h-t.png" alt="Product 4" class="card-image">
+                    <a href="pages/tablet.html" class="btn btn-secondary card-text">تبلت های هواوی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- --------شگفت انلاین--------- -->
+<div class="container mt-4 aa">
+    <div class="d-flex">
+        <h3 class="bi bi-magic me-2 text-primary"></h3>
+        <h2 class="fw-bold text-primary">شگفت آنلاین</h2>
+    </div>
+    <div class="blue-box bg-primary p-3 rounded d-flex flex-wrap align-items-center">
+      
+      <!-- Slider -->
+      <div id="special-offers-slider" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#special-offers-slider" data-bs-slide-to="0"></button>
+          <button type="button" data-bs-target="#special-offers-slider" data-bs-slide-to="1"></button>
+        </div>
+  
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="d-flex flex-wrap justify-content-center">
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/airpodgpt.webp" class="card-img-top img-fluid" alt="airpod">
+                  <span class="badge bg-warning position-absolute top-0 start-0">19%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">هندزفری بلوتوثی</h6>
+                  <del>1,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">930,000 تومان</strong>
+                </div>
+              </div>
+              
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/chargergpt.webp" class="card-img-top img-fluid" alt="charger">
+                  <span class="badge bg-warning position-absolute top-0 start-0">22%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">شارژر fast charge</h6>
+                  <del>1,110,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">866,000 تومان</strong>
+                </div>
+              </div>
+
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/laptopgpt.webp" class="card-img-top img-fluid" alt="laptop">
+                  <span class="badge bg-warning position-absolute top-0 start-0">12%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">لپ‌تاپ اداری</h6>
+                  <del>12,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">9,845,000 تومان</strong>
+                </div>
+              </div>
+
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/watchgpt.webp" class="card-img-top img-fluid" alt="tablet">
+                  <span class="badge bg-warning position-absolute top-0 start-0">11%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">ساعت هوشمند</h6>
+                  <del>4,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">3,030,000 تومان</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+  
+
+          <div class="carousel-item">
+            <div class="d-flex flex-wrap justify-content-center">
+
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/vertical.jpg" class="card-img-top img-fluid" alt="tablet">
+                  <span class="badge bg-warning position-absolute top-0 start-0">11%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">تبلت سامسونگ</h6>
+                  <del>11,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">9,030,000 تومان</strong>
+                </div>
+              </div>
+              
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/macbookgpt.webp" class="card-img-top img-fluid" alt="macbook">
+                  <span class="badge bg-warning position-absolute top-0 start-0">10%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">Apple Macbook</h6>
+                  <del>31,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">29,030,000 تومان</strong>
+                </div>
+              </div>
+
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/phonegpt.webp" class="card-img-top img-fluid" alt="phone">
+                  <span class="badge bg-warning position-absolute top-0 start-0">12%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">تلفن همراه</h6>
+                  <del>10,145,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">7,930,000 تومان</strong>
+                </div>
+              </div>
+              <div class="card mx-2 text-center">
+                <div class="position-relative">
+                  <img src="assets/img/hua.jpg" class="card-img-top img-fluid" alt="tablet">
+                  <span class="badge bg-warning position-absolute top-0 start-0">11%</span>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title">تبلت هواوی</h6>
+                  <del>10,000,000 تومان</del>
+                  <strong class="text-warning d-block mt-4">8,524,000 تومان</strong>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  
+        <button class="carousel-control-prev" type="button" data-bs-target="#special-offers-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#special-offers-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+    <!-- weblog and...  -->
+    <div class="container my-5">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div>
+              <h2 class="text-primary">آخرین مطالب</h2>
+              <div class="news-card d-flex mb-3">
+                <img src="assets/img/web.webp" alt="News" class="me-2">
+                <p class="mb-0 pt-3 fs-5">گوگل به دنبال راه‌ حل‌ های جایگزین برای عدم تقسیم‌ بندی شرکت</p>
+              </div>
+              <div class="news-card d-flex mb-3">
+                <img src="assets/img/webb.webp" alt="News" class="me-2">
+                <p class="mb-0 pt-3 fs-5">اپل برای رفع نقص‌ های امنیتی iOS 18.2.0.1 را آماده می‌کند</p>
+              </div>
+              <div class="news-card d-flex mb-3">
+                <img src="assets/img/webb.webp" alt="News" class="me-2">
+                <p class="mb-0 pt-3 fs-5">اپل برای رفع نقص‌ های امنیتی iOS 18.2.0.1 را آماده می‌کند</p>
+              </div>
+              <a href="#" class="btn btn-warning w-100">همه مطالب</a>
+            </div>
+          </div>
+    
+          <!-- Sell Phone  -->
+          <div class="col-lg-6 sell-section text-center">
+           <div class="d-flex">
+            
+            <h3 class="text-primary mt-3 me-3">گوشیتو سه سوته بفروش!</h3>
+            <img src="assets/img/sale.png" alt="Sell Phone">
+           </div>
+            <p class="my-3 fs-5">مدل گوشیت و شماره همراهت رو بذار تا کارشناسامون باهات تماس بگیرن.</p>
+            <div class="d-flex justify-content-center gap-2">
+              <input type="text" class="form-control" placeholder="مدل گوشیتو وارد کن">
+              <input type="text" class="form-control" placeholder="شماره تماست رو وارد کن">
+            </div>
+            <button class="btn btn-warning mt-3">گوشیمو بفروش</button>
+          </div>
+        </div>
+      </div>
+    
+
+    <!-- ------------------back to top------------------ -->
+    <a href="index.html" class="icn text-decoration-none text-black">
+        <p class="d-block bala ">بازگشت به بالا <i class="bi bi-arrow-up-circle"></i></p>
+    </a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-12 mb-4 text-center icon-section d-flex justify-content-between">
+                    <div><i class="bi bi-cash-coin"></i>
+                        <p class="fs-4 ftr">بازگشت وجه کالا</p>
+                    </div>
+                    <div><i class="bi bi-paypal"></i>
+                        <p class="fs-4 ftr">پرداخت امن</p>
+                    </div>
+                    <div><i class="bi bi-truck"></i>
+                        <p class="fs-4 ftr">ارسال سریع</p>
+                    </div>
+                    <div><i class="bi bi-box2-heart"></i>
+                        <p class="fs-4 ftr">تضمین اصالت کالا</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h3>تماس با ما</h3>
+                    <strong>تهران، خیابان بهار، پاساژ الیزه، طبقه اول، واحد 123</strong>
+                    <p class="fs-4">09191001231 <i class="bi bi-telephone text-primary"></i> </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="#"><i class="bi bi-telegram"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="bb">قبل و بعد از خرید</h5>
+                    <ul class="list-unstyled fs-5">
+                        <li><a href="#">نحوه خرید از دیجیتو</a></li>
+                        <li><a href="#">شرایط ضمانت هفت روزه</a></li>
+                        <li><a href="#">روش ها و هزینه های ارسال</a></li>
+                        <li><a href="#">روش بازگردانی کالا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h3>عضویت در خبرنامه</h3>
+                    <p class="fs-5">اگر دوست دارید از آخرین خبرهای دیجیتال مطلع شوید، ایمیلتان را وارد کنید.</p>
+                    <form class="email-subscribe">
+                        <input type="email" class="form-control" placeholder="ایمیل خود را وارد کنید">
+                        <button type="submit" class="btn btn-primary mt-2">ارسال</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row text-center mt-4">
+                <div class="col">
+                    <img class="foot" src="assets/img/enamad.png" alt="Certification 1">
+                    <img class="foot" src="assets/img/torob.jpg" alt="Certification 2">
+                    <img class="foot" src="assets/img/saman.jpg" alt="Certification 3">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

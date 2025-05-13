@@ -1,0 +1,24 @@
+@font-face {
+    font-family: sahel;
+    src: url(../assets/fonts/Sahel.ttf);
+}
+body{
+    font-family: sahel;
+    direction: rtl;
+    border: 10px solid blue;
+}
+img{
+    width: 100%;
+    height: 350px;
+}
+
+.d{
+    /* height: 100px; */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #c5c6d0;
+}
+
+button{
+    align-items: center;
+}

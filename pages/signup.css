@@ -1,0 +1,53 @@
+@font-face {
+    font-family: sahelB;
+    src: url(../assets/fonts/Sahel-Bold.ttf);
+}
+
+
+body {
+    font-family: sahelB;
+    direction: rtl;
+    background-image: url(../assets/img/bg.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.signup-container {
+    background: rgba(255, 255, 255, 0.905);
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.signup-container h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+::placeholder{
+    text-align: right;
+}
+
+.form-control {
+    transition: all 0.3s ease;
+}
+.form-control:hover {
+    width: 105%;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.login-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+.login-link:hover {
+    text-decoration: underline;
+}
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+}

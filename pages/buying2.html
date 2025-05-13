@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/header-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="buying2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>خرید محصول</title>
+</head>
+<body>
+     <!-- جزیئات محصول -->
+     <div class="container my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div id="productImagesCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/a55/A54-White.jpg" class="d-block col-10 m-auto pic" alt="Product Image 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/a55/a55-pink.jpg" class="d-block col-10 m-auto pic" alt="Product Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/a55/a55-black.jpg" class="d-block col-10 m-auto pic" alt="Product Image 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productImagesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">قبلی</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productImagesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">بعدی</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- اطلاعات محصول -->
+            <div class="col-md-6">
+                <h3 class="product-title">گوشی موبایل سامسونگ مدل Galaxy A55</h3>
+                <p class="text-muted">Samsung Galaxy A55 8GB RAM, 365GB Storage</p>
+                <div class="d-flex align-items-center my-3">
+                    <span class="product-price">21,198,000 تومان</span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="productColor" class="form-label">رنگ</label>
+                    <select class="form-select shadow-sm" id="productColor">
+                        <option value="yellow">سفید</option>
+                        <option value="black">مشکی</option>
+                        <option value="blue">صورتی</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="productWarranty" class="form-label">گارانتی</label>
+                    <select class="form-select shadow-sm" id="productWarranty">
+                        <option value="1year">۱ سال</option>
+                        <option value="2year">۲ سال</option>
+                        <option value="3year">۳ سال</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-4">
+                    <button class="btn btn-primary px-4 py-2 shadow-sm">افزودن به سبد خرید</button>
+                    <a href="#" class="text-primary text-decoration-none" data-bs-toggle="modal" data-bs-target="#specificationsModal">مشخصات فنی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- مشخصات Modal -->
+    <div class="modal fade" id="specificationsModal" >
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="specificationsModalLabel">مشخصات فنی</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="بستن"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <th>ابعاد</th>
+                                <td>164.2 x 75.9 x 8.5 میلی‌متر</td>
+                            </tr>
+                            <tr>
+                                <th>وزن</th>
+                                <td>190 گرم</td>
+                            </tr>
+                            <tr>
+                                <th>سیستم عامل</th>
+                                <td>اندروید 13</td>
+                            </tr>
+                            <tr>
+                                <th>تعداد سیم‌کارت</th>
+                                <td>دو سیم‌کارت</td>
+                            </tr>
+                            <tr>
+                                <th>نوع صفحه نمایش</th>
+                                <td>PLS LCD</td>
+                            </tr>
+                            <tr>
+                                <th>اندازه صفحه نمایش</th>
+                                <td>6.6 اینچ</td>
+                            </tr>
+                            <tr>
+                                <th>رزولوشن</th>
+                                <td>720 x 1600 پیکسل</td>
+                            </tr>
+                            <tr>
+                                <th>تراکم پیکسلی</th>
+                                <td>267 پیکسل در هر اینچ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------- -->
+    <!-- نظرات کاربر -->
+<div class="container my-5">
+    <h4 class="text-dark mb-3">نظرات کاربران</h4>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="d-flex mb-3">
+                <img src="../assets/img/batman.jpg" alt="User Avatar" class="rounded-circle" width="50" height="50">
+                <div class="ms-3">
+                    <h6 class="mb-0">علی رضایی</h6>
+                    <small class="text-muted">۲ روز پیش</small>
+                    <p class="mt-2 text-muted">این گوشی کیفیت خیلی خوبی داره و برای استفاده روزمره عالیه. باتری هم خیلی خوب نگه می‌داره.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex">
+                <img src="../assets/img/girl.jpg" alt="User Avatar" class="rounded-circle" width="50" height="50">
+                <div class="ms-3">
+                    <h6 class="mb-0">زهرا احمدی</h6>
+                    <small class="text-muted">یک هفته پیش</small>
+                    <p class="mt-2 text-muted">من رنگ صورتی رو خریدم، خیلی زیباست و دوربین خوبی داره. پیشنهاد می‌کنم!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- اسلایدر محصولات مرتبط -->
+<div class="container my-5">
+    <h4 class="text-dark mb-3">محصولات مرتبط</h4>
+    <div id="relatedProductsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/a23.jpg" class="card-img-top pics" alt="Product 1">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل A23</h6>
+                                <p class="card-text text-danger">5,200,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/m13.jpg" class="card-img-top pics" alt="Product 2">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل M13</h6>
+                                <p class="card-text text-danger">6,500,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/a04.jpg" class="card-img-top pics" alt="Product 3">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل A04</h6>
+                                <p class="card-text text-danger">3,800,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/a23.jpg" class="card-img-top pics" alt="Product 4">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل S22</h6>
+                                <p class="card-text text-danger">15,200,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/m13.jpg" class="card-img-top pics" alt="Product 5">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل A13</h6>
+                                <p class="card-text text-danger">4,900,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card shadow-sm">
+                            <img src="../assets/img/a04.jpg" class="card-img-top pics" alt="Product 6">
+                            <div class="card-body">
+                                <h6 class="card-title">گوشی موبایل Note 11</h6>
+                                <p class="card-text text-danger">7,600,000 تومان</p>
+                                <button class="btn btn-primary btn-sm">مشاهده</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">قبلی</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#relatedProductsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">بعدی</span>
+        </button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+        <p class="mb-1">تمامی حقوق محفوظ است &copy; 2024</p>
+        <small>طراحی شده توسط ...</small>
+    </div>
+</footer>
+</body>
+</html>

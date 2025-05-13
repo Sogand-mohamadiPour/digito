@@ -1,0 +1,47 @@
+@font-face {
+    font-family: sahelB;
+    src: url(../assets/fonts/Sahel-Bold.ttf);
+}
+
+
+body {
+    font-family: sahelB;
+    background-color: #f7f7f7;
+    direction: rtl;
+  }
+  .compare-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .header {
+    background: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  .card {
+    border: none;
+    margin: 10px 0;
+  }
+  .card img {
+    /* width: 200px; */
+    height: 200px;
+    margin: auto;
+    display: block;
+  }
+  .card-body {
+    text-align: center;
+  }
+  .features-list {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .feature-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/header-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.rtl.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="total.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>سبد خرید</title>
+</head>
+<body>
+    <!-- سبد خرید -->
+ <div class="container my-5">
+    <h3 class="text-center">سبد خرید</h3>
+    <div class="row"> 
+         <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="../assets/img/a04.jpg" alt="Product" class="img-fluid img">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>گوشی سامسونگ Galaxy A06</h5>
+                            <p>اندروید 14 - 6 گیگابایت RAM</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>قیمت: ۷,۱۹۸,۰۰۰ تومان</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex">
+                                <input type="number" class="form-control w-50 me-2" value="1">
+                                <button class="btn btn-danger">حذف</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- مجموع سبد خرید  -->
+         <div class="col-md-12 mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="text-center">مجموع سبد خرید</h4>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>مجموع: <span>۷,۱۹۸,۰۰۰ تومان</span></p>
+                            <p>تخفیف: <span>۰ تومان</span></p>
+                            <h5>مجموع نهایی: <span>۷,۱۹۸,۰۰۰ تومان</span></h5>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#checkoutModal">
+                                ادامه به تسویه حساب
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+
+<!-- سبد خرید  Modal -->
+ <div class="modal fade" id="checkoutModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="checkoutModalLabel">تسویه حساب</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h6>اطلاعات تحویل:</h6>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">نام و نام خانوادگی</label>
+                        <input type="text" class="form-control" id="name" placeholder="نام و نام خانوادگی را وارد کنید">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">آدرس تحویل</label>
+                        <input type="text" class="form-control" id="address" placeholder="آدرس خود را وارد کنید">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">شماره تلفن</label>
+                        <input type="text" class="form-control" id="phone" placeholder="شماره تلفن را وارد کنید">
+                    </div>
+                    <div class="mb-3">
+                        <label for="paymentMethod" class="form-label">روش پرداخت</label>
+                        <select class="form-select" id="paymentMethod">
+                            <option selected>پرداخت آنلاین</option>
+                            <option value="cash">پرداخت نقدی در محل</option>
+                            <option value="bank">انتقال بانکی</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بازگشت</button>
+                <button type="button" class="btn btn-primary">تایید و پرداخت</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+
+  <div class="container my-5">
+    <h3 class="text-center">تأیید سفارش</h3>
+    <div class="row">  
+          <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4>شماره سفارش: #123456</h4>
+                    <p>تاریخ سفارش: ۲۱ نوامبر ۲۰۲۴</p>
+
+                    <h5>محصولات سفارش داده شده:</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="../assets/img/a04.jpg" alt="Product Image" class="img-fluid img">
+                        </div>
+                        <div class="col-md-8">
+                            <p>گوشی سامسونگ Galaxy A06</p>
+                            <p>قیمت: ۷,۱۹۸,۰۰۰ تومان</p>
+                            <p>تعداد: ۱ عدد</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>مجموع سبد خرید</h5>
+                            <p>مجموع: ۷,۱۹۸,۰۰۰ تومان</p>
+                            <p>تخفیف: ۰ تومان</p>
+                            <h5>مجموع نهایی: <span>۷,۱۹۸,۰۰۰ تومان</span></h5>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>اطلاعات تحویل:</h5>
+                            <p>نام و نام خانوادگی: علی رضایی</p>
+                            <p>آدرس: تهران، خیابان ولیعصر، شماره ۱۲۳</p>
+                            <p>شماره تلفن: ۰۹۱۲۳۴۵۶۷۸۹</p>
+                            <p>روش پرداخت: پرداخت آنلاین</p>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h4 class="text-center text-success">متشکریم! سفارش شما با موفقیت ثبت شد.</h4>
+                    <p class="text-center">سفارش شما در حال پردازش است و به زودی به شما ارسال خواهد شد.</p>
+                    <div class="text-center">
+                        <a href="../index.html" class="btn btn-primary">بازگشت به صفحه اصلی</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

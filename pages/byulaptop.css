@@ -1,0 +1,10 @@
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f8f9fa;
+  }
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  

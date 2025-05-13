@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/header-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="laptop.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>خرید لپ‌تاپ</title>
+</head>
+<body>
+    <main class="container my-4">
+        <div class="row">
+            
+            <aside class="col-md-3 mb-3">
+                <!-- Search Bar -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="جستجو محصولات...">
+                </div>
+                <div class="card">
+                    <div class="card-header">فیلترها</div>
+                    <div class="accordion" id="filterAccordion">
+                        <!-- Filter: برند -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="brandHeading">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#brandCollapse" aria-expanded="true"
+                                    aria-controls="brandCollapse">
+                                    برند
+                                </button>
+                            </h2>
+                            <div id="brandCollapse" class="accordion-collapse collapse show"
+                                aria-labelledby="brandHeading" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="asus" id="asus">
+                                        <label class="form-check-label" for="asus">
+                                            asus
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Apple" id="lenovo">
+                                        <label class="form-check-label" for="lenovo">
+                                            lenovo
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Apple" id="microsoft">
+                                        <label class="form-check-label" for="microsoft">
+                                            microsoft
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Apple" id="macbook">
+                                        <label class="form-check-label" for="macbook">
+                                            macbook
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Apple" id="hp">
+                                        <label class="form-check-label" for="hp">
+                                            HP
+                                        </label>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <!-- Filter: cpu-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="suitableHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#suitableCollapse" aria-expanded="false"
+                                    aria-controls="suitableCollapse">
+                                    پردازنده
+                                </button>
+                            </h2>
+                            <div id="suitableCollapse" class="accordion-collapse collapse"
+                                aria-labelledby="suitableHeading" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Men" id="intel">
+                                        <label class="form-check-label" for="intel">
+                                            Intel(u)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Women" id="amd">
+                                        <label class="form-check-label" for="amd">
+                                            AMD
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Women" id="h">
+                                        <label class="form-check-label" for="h">
+                                            سری H
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filter: بر اساس قیمت-->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="suitableHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#price" aria-expanded="false"
+                                    aria-controls="price">
+                                    بر اساس قیمت
+                                </button>
+                            </h2>
+                            <div id="price" class="accordion-collapse collapse"
+                                aria-labelledby="price" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="million" id="million">
+                                        <label class="form-check-label" for="million">
+                                            تا 14 میلیون تومان
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="millions" id="millions">
+                                        <label class="form-check-label" for="millions">
+                                            14 تا 30 میلیون تومان
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="millions3" id="millions3">
+                                        <label class="form-check-label" for="millions3">
+                                            30 تا 60 میلیون تومان
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="millions4" id="millions4">
+                                        <label class="form-check-label" for="millions4">
+                                            از 60 میلیون به بالا
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filter: grafic -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="suitableHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#cpu" aria-expanded="false"
+                                    aria-controls="suitableCollapse">
+                                    کارت گرافیک ( GPU )
+                                </button>
+                            </h2>
+                            <div id="cpu" class="accordion-collapse collapse"
+                                aria-labelledby="suitableHeading" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cpu0" id="vram">
+                                        <label class="form-check-label" for="vram">
+                                            VRAM (2 تا 16 گیگابایت)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cpu" id="m1">
+                                        <label class="form-check-label" for="m1">
+                                            تراشه M1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cpu" id="gtx">
+                                        <label class="form-check-label" for="gtx">
+                                            GTX 1650
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filter: ابعاد و وزن -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="suitableHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#battery" aria-expanded="false"
+                                    aria-controls="battery">
+                                    ابعاد و وزن
+                                </button>
+                            </h2>
+                            <div id="battery" class="accordion-collapse collapse"
+                                aria-labelledby="suitableHeading" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="battery" id="battery1">
+                                        <label class="form-check-label" for="battery1">
+                                            تا 12 اینچ
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="battery" id="battery2">
+                                        <label class="form-check-label" for="battery2">
+                                            14 به بالا
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Filter: battery -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="suitableHeading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#camera" aria-expanded="false"
+                                    aria-controls="camera">
+                                    انواع باتری
+                                </button>
+                            </h2>
+                            <div id="camera" class="accordion-collapse collapse"
+                                aria-labelledby="suitableHeading" data-bs-parent="#filterAccordion">
+                                <div class="accordion-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="camera1" id="nikle">
+                                        <label class="form-check-label" for="nikle">
+                                            باتری نیکل کادمیوم
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="camera2" id="metal">
+                                        <label class="form-check-label" for="metal">
+                                            باتری نیکل متال هیدرید
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="camera2" id="yon">
+                                        <label class="form-check-label" for="yon">
+                                            باتری لیتیوم یون
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Product Tabs -->
+            <section class="col-md-9">
+                <ul class="nav nav-tabs mb-3" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="laptop-tab" data-bs-toggle="tab"
+                            data-bs-target="#laptop" type="button" role="tab" aria-controls="laptop"
+                            aria-selected="true">لپ‌تاپ</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="macbook-tab" data-bs-toggle="tab" data-bs-target="#macbooks"
+                            type="button" role="tab" aria-controls="macbooks" aria-selected="false">مک‌بوک</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="watches-tab" data-bs-toggle="tab" data-bs-target="#watches"
+                            type="button" role="tab" aria-controls="watches" aria-selected="false">ساعت‌ها</button>
+                    </li>
+                </ul>
+            <!-- --------------tab pane--------------- -->
+                <div class="tab-content" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="laptop" role="tabpanel" aria-labelledby="laptop-tab">
+                        <div class="row g-3">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/laptopgpt.webp" class="card-img-top" alt="laptop 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">لپ‌تاپ TUF Gaming asus</h5>
+                                        <del class="card-text text-muted">39,000,000تومان</del>
+                                        <h5> 36,600,000تومان</h5>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <!-- Chargers Tab -->
+                    <div class="tab-pane fade" id="macbooks" role="tabpanel" aria-labelledby="macbook-tab">
+                        <div class="row g-3">
+                            <!-- Product Card -->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card ">
+                                    <img src="../assets/img/macbookgpt.webp" class="card-img-top" alt="macbook 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">MacBook Pro MTL73 </h5>
+                                        <del class="card-text">95,000,000 تومان</del>
+                                        <p class="card-text">91,000,000 تومان</p>
+                                        <a href="buylaptop.html" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Watches Tab -->
+                    <div class="tab-pane fade" id="watches" role="tabpanel" aria-labelledby="watches-tab">
+                        <div class="row g-3">
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="card">
+                                    <img src="../assets/img/dwatch.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">ساعت هوشمند</h5>
+                                        <p class="card-text text-muted">۳,۲۵۰,۰۰۰ تومان</p>
+                                        <a href="#" class="btn btn-primary">خرید</a>
+                                        <a href="#" class="btn btn-secondary">مقایسه</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

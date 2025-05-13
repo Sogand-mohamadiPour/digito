@@ -1,0 +1,511 @@
+@font-face {
+    font-family: sahel;
+    src: url(assets/fonts/Sahel.ttf);
+
+}
+
+@font-face {
+  font-family: sahelB;
+  src: url(assets/fonts/Sahel-Bold.ttf);
+}
+
+body {
+    font-family: vazir;
+    direction: rtl !important;
+    background-color: #f7f7f7;
+}
+
+header .btn {
+    font-size: 0.9rem;
+}
+
+.search-bar .form-control {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.search-bar .btn {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+ .offcanvas {
+    color: black;
+    transition: transform 0.4s ease, background-color 0.4s ease;
+}
+
+.offcanvas .offcanvas-header h5 {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+.offcanvas .offcanvas-body {
+    padding: 2rem;
+}
+
+.offcanvas a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.offcanvas a i {
+    margin-left: 10px;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease;
+}
+
+.offcanvas a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.offcanvas a:hover i {
+    transform: rotate(20deg);
+}
+
+.ii:hover{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.5);
+}
+
+.iii{
+  top: 41px;
+}
+/* --------------------icons-------------------- */
+
+.icon-wrapper:hover i {
+  color: #ffc107;
+}
+
+.text-blue {
+  color: #007bff;
+}
+
+.text-purple {
+  color: #6f42c1;
+}
+
+.text-green {
+  color: #28a745;
+}
+
+/* Animation  */
+#site-name h1.animate {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  animation: colorShift 2s infinite, slideIn 3s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+  0%, 100% {
+    color: #0d6efd;
+  }
+  50% {
+    color: #1e88e5;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#site-name p {
+  font-size: 1rem;
+  margin-top: 0;
+  color: #0056b3;
+}
+/* -------------category-------------- */
+.category-h:hover{
+  transform: scale(1.1);
+  transition: all 1s;
+  }
+
+
+  .category-icons img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #e63946;
+    border-radius: 50%;
+    padding: 5px;
+  }
+
+
+
+
+  .product-card {
+    border-radius: 15px;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: hidden;
+  }
+
+.product-card img {
+    width: 110px; 
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    height: auto;
+    z-index: 1; 
+}
+
+.product-card h5 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    z-index: 2;
+}
+
+.product-card .btn {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    align-self: flex-start; 
+    z-index: 2; 
+    position: relative;
+}
+
+.product-card .btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+  /* --info card-- */
+  .info-card {
+    text-align: center;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    color: #00796b;
+    height: 350px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .info-card img {
+    width: 150px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+  }
+  /* ----------------------------------- */
+  h2.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+  }
+  
+  .img-t {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 225px;
+    width: 250px;
+  }
+  
+  .btn-t {
+    margin-top: 10px;
+    width: 80%;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+.custom-card {
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+.card-image {
+  width: 80%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  /* background-color: #2575fc; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-text {
+  font-family: sahelB !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+/* --------------------- */
+.aa{
+  border: 1px solid blue;
+  padding: 10px;
+}
+.blue-box {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  flex: 1 1 100%; 
+  max-width: 100%; 
+}
+
+.card {
+  width: 200px;
+  border: none;
+  margin-top: 5px;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.5em;
+}
+
+.card img {
+  object-fit: contain;
+  height: 150px;
+  margin-top: 5px;
+}
+
+
+/* weblog and... */
+.news-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .sell-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .sell-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+
+
+
+/* ---------back to top-------------- */
+
+.bala{
+  font-family: sahelB !important;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
+  text-align: center;
+  font-size: 2em;
+}
+
+.icn:hover{
+  color: blue !important;
+}
+
+
+/* fooooooooooooter */
+footer {
+  background-color: #d3d3d3 ;
+  margin-top: -15px;
+}
+
+footer .icon-section i {
+  color: #1F75FE;
+  font-size: 55px;
+  margin: 0 8px;
+}
+
+.ftr{
+  font-family: sahelB !important;
+}
+
+footer h3 {
+  color: #333;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer a i {
+  color: #1F75FE;
+  text-decoration: none;
+  font-size: 50px;
+}
+
+
+footer a i:hover {
+  color: #555;
+}
+
+.email-subscribe input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.social-icons img {
+  max-width: 50px;
+  margin: 10px;
+}
+.foot{
+  width: 100px;
+  height: 100px;
+}
+.bb{
+  font-family: sahelB !important;
+}
+
+
+  /* ---------------------------------------media------------------------------- */
+@media only screen and(max-width: 576px) {
+  .btn-t {
+    width: 80%; 
+  }
+}
+/* motorolla and... */
+
+@media only screen and(max-width: 768px) {
+  .product-card img {
+      width: 80px;
+      bottom: 5px;
+      left: 10px;
+  }
+
+  .product-card h5 {
+      font-size: 1rem;
+  }
+
+  .product-card .btn {
+      font-size: 0.8rem;
+  }
+}
+
+@media only screen and(max-width: 576px) {
+  .product-card {
+      padding: 10px;
+  }
+
+  .product-card img {
+      width: 70px;
+  }
+}
+
+
+  @media only screen and (min-width: 768px) {
+    .info-card {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .info-card img {
+      width: 200px;
+      margin-right: 20px;
+    }
+  }
+  
+  #info, #info2 {
+    text-align: center;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #info, #info2 {
+      text-align: left;
+    }
+  }
+  /* -------------4 divs ---------------- */
+  @media only screen and (max-width: 768px) {
+    .custom-card {
+      min-height: 250px;
+    }
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 576px) {
+    .custom-card {
+      padding: 10px;
+    }
+    .card-image {
+      max-width: 120px;
+    }
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* شگفت انلاین */
+
+  @media only screen and (max-width: 576px) {
+    .static-section img {
+      max-width: 100px; /* Smaller image on small screens */
+    }
+  
+    .yellow-box {
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    .card {
+      width: 150px; /* Smaller cards on small screens */
+    }
+  
+    .card img {
+      height: 120px; /* Adjust image height */
+    }
+  }
+
+  /* footer */
+
+  @media only screen and (max-width: 768px) {
+    .icon-section {
+        text-align: center;
+    }
+  
+    footer h3, footer ul, .email-subscribe {
+        text-align: center;
+    }
+  }

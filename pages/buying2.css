@@ -1,0 +1,59 @@
+@font-face {
+    font-family: sahel;
+    src: url(../assets/fonts/Sahel.ttf);
+}
+
+
+body{
+    direction: rtl;
+    font-family: sahel;
+    background-color: #f8f9fa;
+}
+.pic{
+    height: 350px;
+}
+
+.carousel-item img {
+    border-radius: 15px;
+}
+
+.product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.product-price {
+    font-size: 1.5rem;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-select {
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.pics{
+    height: 350px;
+}
+
+/* media*/
+@media only screen and (max-width: 768px) {
+    .product-title {
+        font-size: 1.5rem;
+    }
+
+    .product-price {
+        font-size: 1.3rem;
+    }
+}
